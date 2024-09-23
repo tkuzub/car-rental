@@ -25,6 +25,8 @@
         <junit-jupiter.version>5.11.0</junit-jupiter.version>
         <assertj-core.version>3.24.2</assertj-core.version>
         <lombok.version>1.18.30</lombok.version>
+        <hibernate.version>6.5.2.Final</hibernate.version>
+        <postgres.version>42.7.4</postgres.version>
 
     </properties>
 
@@ -47,6 +49,18 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgres.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
